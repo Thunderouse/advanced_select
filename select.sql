@@ -19,7 +19,6 @@ FROM album JOIN track
 GROUP BY title;
 
 -- 4.все исполнители, которые не выпустили альбомы в 2020 году;
--- никто не выпустил или я не добавил
 SELECT performer.name
 FROM performer
 WHERE performer.name NOT IN (SELECT DISTINCT performer.name
